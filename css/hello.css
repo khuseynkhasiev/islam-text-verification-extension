@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+.islam {
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.islam__container {
+    max-width: 70%;
+    width: 100%;
+    max-height: 70%;
+    height: 100%;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.14);
+    padding: 100px 50px;
+    box-sizing: border-box;
+}
+.islam__title {
+    color: #1e1e1e;
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+}
+.islam__subtitle {
+    padding-top: 50px;
+    color: #1e1e1e;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+.islam__items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.islam__item {
+    color: #1e1e1e;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+.islam__btn-panel {
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+.islam__btn-okey {
+    border-radius: 10px;
+    background: #1b2429;
+    backdrop-filter: blur(7.5px);
+    width: 200px;
+    height: 30px;
+    color: white;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    border-style: none;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+}
+.islam__btn-okey:hover {
+    opacity: 0.5;
+}

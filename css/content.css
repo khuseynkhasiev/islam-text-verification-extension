@@ -1,0 +1,9 @@
+/* content.css */
+
+.buttonPostAllText {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 150px;
+    height: 30px;
+}
