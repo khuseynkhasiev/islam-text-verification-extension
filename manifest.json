@@ -1,0 +1,51 @@
+{
+    "name": "__MSG_name__",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "default_locale": "ru",
+    "author": "https://github.com/khuseynkhasiev",
+    "description": "__MSG_description__",
+    "action": {
+        "default_popup": "html/popup.html",
+        "default_icon": "icons/icon-64.png"
+    },
+    "icons": {
+        "32": "/icons/icon-32.png",
+        "64": "/icons/icon-64.png",
+        "128": "/icons/icon-128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "run_at": "document_idle",
+            "all_frames": false,
+            "js": ["js/content.js"]
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "scripting",
+        "storage",
+        "alarms",
+        "notifications"
+    ],
+    "host_permissions": ["<all_urls>"],
+    "web_accessible_resources": [
+        {
+            "resources": ["content.css"],
+            "matches": ["<all_urls>"]
+        }
+    ],
+    "commands": {
+        "copy-all": {
+            "suggested_key": {
+                "default": "Alt+Shift+C"
+            },
+            "description": "Copy all text"
+        }
+    },
+    "background": {
+        "service_worker": "js/background.js"
+    }
+}
