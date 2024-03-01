@@ -2,10 +2,29 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8" />
-        <title>My Extension Popup</title>
+        <title>Ислам</title>
+        <link rel="stylesheet" href="../css/popup.css" />
     </head>
     <body>
-        <div style="height: 400px; width: 500px; background-color: blue"></div>
+        <div class="popup">
+            <h1 class="popup__title">Проверка достоверености информации</h1>
+            <form class="popup__form" action="" method="post">
+                <textarea
+                    maxlength="10000"
+                    required
+                    class="popup__textarea"
+                    name="popup-copy-text"
+                    id="popup-copy-textarea"
+                    cols="30"
+                    rows="10"
+                >
+                </textarea>
+                <div id="popup-char-count">0 / 10000</div>
+                <button class="popup__post-btn" id="popup-form-post-btn">
+                    Проверить
+                </button>
+            </form>
+        </div>
         <script src="/js/popup.js"></script>
     </body>
 </html>

@@ -11,3 +11,11 @@ chrome.commands.onCommand.addListener((command) => {
         console.log('сработал copy-all');
     }
 });
+
+
+chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+    if (request.openNewTab) {
+        // Создаем новую вкладку
+        chrome.tabs.create({ url: chrome.runtime.getURL('html/answer.html') });
+    }
+});

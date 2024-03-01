@@ -1,5 +1,5 @@
 // copyAllText.js
-console.log('copyAllText');
+console.log('подключен copyAllText');
 
 function getAllText() {
     // Получаем все элементы, содержащие текст, на странице
@@ -24,4 +24,3 @@ function getAllText() {
     // console.log(allText);
     return allText;
 }
-

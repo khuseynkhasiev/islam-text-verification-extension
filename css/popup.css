@@ -1,0 +1,59 @@
+.popup {
+    padding: 30px 30px;
+    width: 500px;
+}
+.popup__title {
+    color: #1e1e1e;
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+}
+.popup__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.popup__textarea {
+    text-indent: 0;
+    box-sizing: border-box;
+    resize: none;
+    color: #1e1e1e;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+
+    min-height: 300px;
+    /* max-width: 500px;
+    min-width: 500px; */
+    width: 100%;
+    vertical-align: top;
+    overflow-wrap: break-word; /* Перенос текста при достижении ширины блока */
+}
+.popup__post-btn {
+    border-radius: 10px;
+    background: #1b2429;
+    backdrop-filter: blur(7.5px);
+    width: 200px;
+    height: 30px;
+    color: white;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    border-style: none;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+}
+.popup__post-btn:hover {
+    opacity: 0.5;
+}
+
+#popup-char-count {
+    float: right;
+    color: #999;
+}

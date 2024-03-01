@@ -17,7 +17,21 @@ buttonPostAllText.textContent = 'Проверить';
 
 body.appendChild(buttonPostAllText);
 
-buttonPostAllText.addEventListener('click', () => {
+buttonPostAllText.addEventListener('click', outTextAll);
+
+function outTextAll() {
     let text = getAllText();
     console.log(text);
-});
+
+    chrome.storage.local.set({ textAreaValue: text }, function () {
+        if (chrome.runtime.lastError) {
+            console.error(
+                'Ошибка сохранения в хранилище:',
+                chrome.runtime.lastError
+            );
+        } else {
+            // Отправляем сообщение фоновому сценарию
+            chrome.runtime.sendMessage({ openNewTab: true });
+        }
+    });
+}
